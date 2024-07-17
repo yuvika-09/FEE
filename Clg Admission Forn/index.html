@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>College Admission Form</h1></legend>
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender: </label>
+                <input type="radio" id="male" name="gender" value="male" required><label for="male"> Male</label>
+                <input type="radio" id="female" name="gender" value="female" required><label for="female"> Female</label>
+            </div>
+            <div class="form-group">
+                <label for="fname">Father's Name: </label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class="form-group">
+                <label for="mname">Mother's Name: </label>
+                <input type="text" id="mname" name="mname" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date Of Birth: </label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Ph. no.: </label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address: </label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="course">Course: </label>
+                <select id="course" name="course" required>
+                    <option value="select" selected>-select-</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Arch">B.Arch</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
